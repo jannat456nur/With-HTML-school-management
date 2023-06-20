@@ -1,153 +1,100 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-body {
-  font-family: Arial, sans-serif;
+.slide-container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 40px 0;
 }
-
-.navbar {
-  background-color: #f8f8f8;
-  padding: 10px;
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
 }
+.card {
+  border-radius: 25px;
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 250px;
+  height: 350px;
 }
-
-.navbar-logo {
-  font-weight: bold;
-  font-size: 20px;
-  color: #333;
-  text-decoration: none;
+.card-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-
-.navbar-menu {
-  display: flex;
-  list-style: none;
-}
-
-.navbar-item {
-  margin-left: 15px;
-}
-
-.navbar-link {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-.navbar-link:hover {
-  color: #000;
-}
-
-.navbar-toggle {
-  display: none;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.navbar-toggle-icon {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #333;
-  position: relative;
-  transition: background-color 0.3s;
-}
-
-.navbar-toggle-icon:before,
-.navbar-toggle-icon:after {
-  content: '';
-  width: 20px;
-  height: 2px;
-  background-color: #333;
-  position: absolute;
-  transition: transform 0.3s;
-}
-
-.navbar-toggle-icon:before {
-  top: -6px;
-}
-
-.navbar-toggle-icon:after {
-  top: 6px;
-}
-/* ... previous CSS code ... */
-
-.navbar-menu {
+.card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #333;
-  position: absolute;
-  top: 100%;
-  left: 0;
+
+  height: 120px;
+  width: 220px;
+}
+.card-content {
+  background-color: #04d2c8;
+  height: 130px;
+  width: 250px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  width: 250px;
+
+  margin-top: 1rem;
+}
+.card-image .card-img {
+  height: 100%;
   width: 100%;
-  padding: 20px 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  object-fit: cover;
 }
-
-.navbar-menu.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.navbar-menu a {
+.name {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #fff;
-  font-size: 18px;
-  padding: 10px;
+}
+.description {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
 }
 
-/* ... remaining CSS code ... */
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
 
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
   }
-
-  .navbar-menu {
+  .swiper-navBtn {
     display: none;
-    flex-direction: column;
-    margin-top: 10px;
-    color: #000;
-    background-color: red;
-  }
-
-  .navbar-item {
-    margin-left: 0;
-    margin-bottom: 10px;
-    color: #000;
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-toggle.active .navbar-toggle-icon {
-    background-color: transparent;
-  }
-
-  .navbar-toggle.active .navbar-toggle-icon:before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-
-  .navbar-toggle.active .navbar-toggle-icon:after {
-    transform: rotate(-45deg);
-    top: 0;
-  }
-
-  .navbar-toggle.active + .navbar-menu {
-    display: flex;
   }
 }

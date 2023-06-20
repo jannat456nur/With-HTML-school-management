@@ -2,52 +2,137 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-container">
-        <a href="#" class="navbar-logo">Logo</a>
-        <ul class="navbar-menu">
-          <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
-          <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Services</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Contact</a>
-          </li>
-        </ul>
-        <button class="navbar-toggle" id="navbar-toggle">
-          <span class="navbar-toggle-icon"></span>
-        </button>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-1.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-2.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-3.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-4.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-5.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">HR Management</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-6.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Web technology</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-5.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Financial Analytics</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-1.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Academic English</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-2.jpg" alt="" class="card-img" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
 
-    <script >
- document.addEventListener('DOMContentLoaded', function() {
-  var toggleButton = document.getElementById('navbar-toggle');
-  var navbarMenu = document.querySelector('.navbar-menu');
-
-  toggleButton.addEventListener('click', function() {
-    toggleButton.classList.toggle('active');
-    navbarMenu.classList.toggle('active');
-  });
-  
-  // Close the menu when a link is clicked
-  var navbarLinks = document.querySelectorAll('.navbar-link');
-  navbarLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-      if (navbarMenu.classList.contains('active')) {
-        toggleButton.classList.remove('active');
-        navbarMenu.classList.remove('active');
-      }
-    });
-  });
-});
-
-</script>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
   </body>
+
+  <!-- Swiper JS -->
+  <script src="./swiper-bundle.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
 </html>

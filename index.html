@@ -5,14 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>School management</title>
+   <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
   <!-- css link -->
   <link rel="stylesheet" href="./index.css"></link>
    <!-- Font awesome kit -->
-
-    <script
-      src="https://kit.fontawesome.com/d5d25df65b.js"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://kit.fontawesome.com/d5d25df65b.js"crossorigin="anonymous"></script>
 
 </head>
 
@@ -22,13 +20,9 @@
   <nav id="navbar" class="navbar">
     <a href="#logo">
       <img src="./img/logo-inverse-396x100.png" alt="" class="logo">
-
       <div class="nav-links" id="navlinks">
     </a>
-     <i
-            class="fa-sharp fa-solid fa-circle-xmark fa"
-            onclick="hideMenu()"
-          ></i>
+     <i class="fa-sharp fa-solid fa-circle-xmark fa"onclick="hideMenu()"></i>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -41,7 +35,6 @@
   <Header>
      <p class="title-1">Inspiration,Innovation </p> 
      <p class="title-2"> and Discovary</p>
-
      <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           voluptatibus sapiente sint <br> 
@@ -50,7 +43,6 @@
           temporibus dolores iure.
      </p>
       <button class="btn">Learn More</button>
-
   </Header> 
   
   <!-- end of nav -->
@@ -58,13 +50,10 @@
   <!-- offer starts -->
 
   <div class="container">
-
     <p class="offer-mini-title">Guaranteed Success</p>
     <h1 class="offer-title">What We Offer</h1>
     <p class="offer-para-1">Teachzy offers students the best of education and entertainment opportunities available in the area.</p>
     <p class="offer-para-2">       We are glad to take care of every student and university entrant.</p>
-
-
     <div class="offers">
       <div class="part-1">
         <p class="offers-icon"><i class="fa-solid fa-school"></i></p>
@@ -87,32 +76,129 @@
 
   <!-- end of offer -->
 
+  <!-- start of featured cources -->
+ <div class="featured-container">
+    <p class="feature-title">Our Featured Courses</p>
+    <p class="feature-para">Our featured courses are selected through a rigorous process and uniquely created for each semester.<br> They cover a lot of topics and are available both online and offline.</p>
+ 
+   <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-1.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-2.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-3.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-4.jpg" alt="" class="card-img" />
+            </div>
 
-  <!-- javascript  -->
-  
-  <script>
-          window.addEventListener('scroll', function() {
-        var navbar = document.getElementById('navbar');
-        var scrolled = window.scrollY > 0;
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-5.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">HR Management</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-6.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Web technology</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-5.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Financial Analytics</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-1.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Academic English</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="./img/c-2.jpg" alt="" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="name">Online Marketing</h2>
+              <p class="description">
+                Ronald Richards
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-        if (scrolled) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
+  </div>  
 
-       var navLinks = document.getElementById('navlinks')
-      function showMenu() {
-        navLinks.style.right = '0%'
-        // navLinks.style.height= '100vh';
-      }
-      function hideMenu() {
-        navLinks.style.right = '-100%'
-      }
+  <!-- end of freatured cources -->
 
-  </script>
-
-  <!-- end of javascript -->
+  <!-- Swiper JS -->
+  <script src="./swiper-bundle.min.js"></script>
+  <!-- custom javascript link -->
+ <!-- JavaScript -->
+  <script src="./script.js"></script>
 </body>
 </html>
