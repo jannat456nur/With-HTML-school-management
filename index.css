@@ -597,3 +597,79 @@ nav .fa {
 }
 
 /* end of upcomming section */
+/* starts of letter */
+
+.letter {
+  background-color: #04d2c8;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letter-text {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+.letter-button {
+  background-color: #fff;
+  color: #42495b;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 130px;
+  border-radius: 50px;
+}
+/* ends of letter */
+
+/* starts of footer */
+footer {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  background-color: #efefef;
+}
+.contacts,
+.social-media,
+.aboutus,
+.teachers {
+  width: 25%;
+  /* background-color: green; */
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+.footer-title {
+  font-size: 1.5rem;
+  color: #04d2c8;
+  text-align: flex-start;
+  margin: 1rem;
+}
+.footer-para {
+  font-size: 1rem;
+  color: #626772;
+  text-align: flex-start;
+  margin: 0.5rem;
+}
+.footer-para:hover {
+  color: #04d2c8;
+}
+.copyright {
+  background-color: #42495b;
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.copyright-text {
+  /* margin-top: 1rem; */
+  padding: 2rem;
+  color: #fff;
+}
+/* end of footer */
