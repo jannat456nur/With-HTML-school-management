@@ -51,25 +51,14 @@ var swiper = new Swiper('.slide-content', {
   },
 })
 
-//second carousel
+// for scroll to top button
 
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
-  direction: getDirection(),
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection())
-    },
-  },
+const toTop = document.querySelector('.to-top')
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add('active')
+  } else {
+    toTop.classList.remove('active')
+  }
 })
-
-function getDirection() {
-  var windowWidth = window.innerWidth
-  var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal'
-
-  return direction
-}
