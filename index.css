@@ -371,3 +371,78 @@ nav .fa {
   }
 }
 /* end of featured cources */
+
+/* tutors section */
+
+.tutors-mini-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5rem;
+  color: #04d2c8;
+}
+.tutors-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #626772;
+  text-align: center;
+}
+.tutors-para {
+  text-align: center;
+  font-size: 1rem;
+  color: #626772;
+  margin: 1rem;
+}
+.tutors-div {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  row-gap: 10px;
+  /* column-gap: 5px; */
+}
+.tutors-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  /* background-color: red; */
+  padding: 10px;
+}
+.image-div {
+  width: 100%;
+  height: 100%;
+}
+.image-div img {
+  border-radius: 50%;
+  width: 150px;
+  text-align: center;
+}
+.tutors-name {
+  font-size: 1.4rem;
+  color: #42495b;
+  font-weight: 600;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+.tutors-name:hover {
+  color: #04d2c8;
+}
+.profession {
+  font-size: 1.2rem;
+  color: #686d78;
+}
+.tutors-description {
+  font-size: 1rem;
+
+  color: #adb0bb;
+}
+.tutors-icons {
+  color: #04d2c8;
+  margin: 0.5rem 0;
+}
+/* responsive styles */
+
+
