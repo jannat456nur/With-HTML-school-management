@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">Logo</a>
+        <ul class="navbar-menu">
+          <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Services</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+        <button class="navbar-toggle" id="navbar-toggle">
+          <span class="navbar-toggle-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <script >
+ document.addEventListener('DOMContentLoaded', function() {
+  var toggleButton = document.getElementById('navbar-toggle');
+  var navbarMenu = document.querySelector('.navbar-menu');
+
+  toggleButton.addEventListener('click', function() {
+    toggleButton.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+  });
+  
+  // Close the menu when a link is clicked
+  var navbarLinks = document.querySelectorAll('.navbar-link');
+  navbarLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (navbarMenu.classList.contains('active')) {
+        toggleButton.classList.remove('active');
+        navbarMenu.classList.remove('active');
+      }
+    });
+  });
+});
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School management</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="./index.css"></link>
+   <!-- Font awesome kit -->
+
+    <script
+      src="https://kit.fontawesome.com/d5d25df65b.js"
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+
+
+<body>
+  <!-- nav starts -->
+  <nav id="navbar" class="navbar">
+    <a href="#logo">
+      <img src="./img/logo-inverse-396x100.png" alt="" class="logo">
+
+      <div class="nav-links" id="navlinks">
+    </a>
+     <i
+            class="fa-sharp fa-solid fa-circle-xmark fa"
+            onclick="hideMenu()"
+          ></i>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+     <i class="fa-solid fa-bars fa" onclick="showMenu()"></i>
+  </nav>
+  <Header>
+     <p class="title-1">Inspiration,Innovation </p> 
+     <p class="title-2"> and Discovary</p>
+
+     <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          voluptatibus sapiente sint <br> 
+          ratione, officia maiores. Doloribus, sit repellendus 
+          eum alias dicta fuga optio molestiae<br> quas corrupti 
+          temporibus dolores iure.
+     </p>
+      <button class="btn">Learn More</button>
+
+  </Header> 
+  
+  <!-- end of nav -->
+
+  <!-- offer starts -->
+
+  <div class="container">
+
+    <p class="offer-mini-title">Guaranteed Success</p>
+    <h1 class="offer-title">What We Offer</h1>
+    <p class="offer-para-1">Teachzy offers students the best of education and entertainment opportunities available in the area.</p>
+    <p class="offer-para-2">       We are glad to take care of every student and university entrant.</p>
+
+
+    <div class="offers">
+      <div class="part-1">
+        <p class="offers-icon"><i class="fa-solid fa-school"></i></p>
+        <p class="offers-title">Online Education</p>
+        <p class="offers-para">Teachzy provides online education services with all learning materials and lectures available to you.</p>
+      </div>
+      <div class="part-2">
+        <p class="offers-icon"><i class="fa-solid fa-school"></i></p>
+        <p class="offers-title">Online Education</p>
+        <p class="offers-para">Teachzy provides online education services with all learning materials and lectures available to you.</p>
+      </div>
+      <div class="part-3">
+         <p class="offers-icon"><i class="fa-solid fa-school"></i></p>
+        <p class="offers-title">Online Education</p>
+        <p class="offers-para">Teachzy provides online education services with all learning materials and lectures available to you.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end of offer -->
+
+
+  <!-- javascript  -->
+  
+  <script>
+          window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        var scrolled = window.scrollY > 0;
+
+        if (scrolled) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+       var navLinks = document.getElementById('navlinks')
+      function showMenu() {
+        navLinks.style.right = '0%'
+        // navLinks.style.height= '100vh';
+      }
+      function hideMenu() {
+        navLinks.style.right = '-100%'
+      }
+
+  </script>
+
+  <!-- end of javascript -->
+</body>
+</html>
