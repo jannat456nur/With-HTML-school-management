@@ -1,2 +1,2 @@
 # With-HTML-school-management
-live link:https://649291a21b282f1c048de292--timely-arithmetic-ad5722.netlify.app/
+live link:https://6492c7ae83cc3f3ce5385dea--startling-cranachan-9ccce0.netlify.app/
