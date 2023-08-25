@@ -1,0 +1,84 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.question {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.answer {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* news latter strts */
+.newsletter-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800pX;
+  margin: 2rem auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.newsletter-icon {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+.newsletter-form input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.newsletter-form button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* news latter ends */

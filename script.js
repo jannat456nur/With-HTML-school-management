@@ -62,3 +62,47 @@ window.addEventListener('scroll', () => {
     toTop.classList.remove('active')
   }
 })
+
+// for swiper slider in about page
+var swiper = new Swiper('.mySwiper', {
+  spaceBetween: 30,
+  effect: 'fade',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+})
+
+const slider = document.querySelector('.slider')
+const indicators = document.querySelectorAll('.indicator')
+
+let currentIndex = 0
+
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener('click', () => {
+    currentIndex = index
+    updateSlider()
+  })
+})
+
+function updateSlider() {
+  const slideWidth = slider.clientWidth
+  slider.style.transform = `translateX(-${slideWidth * currentIndex}px)`
+
+  indicators.forEach((indicator, index) => {
+    if (index === currentIndex) {
+      indicator.style.backgroundColor = '#333'
+    } else {
+      indicator.style.backgroundColor = '#ccc'
+    }
+  })
+}
+
+updateSlider()
+
+
+// for swiper slider in about page

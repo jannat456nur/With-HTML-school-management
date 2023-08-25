@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+
+.contact-section {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social-links {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.social-links h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #333;
+}

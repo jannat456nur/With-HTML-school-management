@@ -1,0 +1,221 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+/* Navbar styles */
+.mininav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease; /* Added transition for smooth effect */
+  padding: 10px 50px;
+  z-index: 1000;
+}
+
+.en {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.en h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.en a {
+  cursor: pointer !important;
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+.bn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.bn h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.bn a {
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease; /* Added transition for smooth effect */
+  padding: 10px 50px;
+  z-index: 1000;
+}
+.nav-links {
+  margin: auto;
+}
+.navbar.scrolled {
+  background-color: #dc3545; /* Change the background color when scrolled */
+}
+
+header {
+  margin-top: -5rem;
+  height: 112vh;
+  background-image: url('./img/image-17-1920x998.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  position: relative;
+  top: 35%;
+  left: 45%;
+  text-align: center;
+  background-color: #dc3545;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btn:focus {
+  outline: none;
+}
+nav .fa {
+  display: none;
+}
+/* login starts */
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.login-form input[type='email'],
+.login-form input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.links span {
+  margin: 0 10px;
+  color: #333;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-login button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.google-btn {
+  background-color: #ccc; /* Google Red */
+}
+
+.facebook-btn {
+  background-color: #ccc; /* Facebook Blue */
+}

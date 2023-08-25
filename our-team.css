@@ -1,0 +1,66 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+/* start of blog */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  margin-top: 2rem;
+  flex: 0 0 calc(33.33% - 20px); /* Three cards in a row */
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-text h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-text p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+/* ends of blog */
